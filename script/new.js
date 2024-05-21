@@ -1,4 +1,3 @@
-window.alert("success");
 let switchModebtn= document.querySelector(".switch-mode");
 let body = document.body;
 let upload = document.querySelector(".upload");
@@ -32,7 +31,7 @@ uploadblog.onchange =()=>{
 }
 let likeb = document.querySelector("#like-button");
 let disbtn = document.querySelector("#dislike-button");
-let Posts = JSON.parse(localStorage.getItem("savedposts"));
+let Posts = [];
 let addPost = document.querySelector("#save");
 let profileimage =document.querySelector("#profile-picture");
 let profilename = document.querySelector("#name");
@@ -47,6 +46,7 @@ let blogtext= document.querySelector("textarea");
 
 
 addPost.addEventListener("click", ()=>{  
+    Posts = JSON.parse(localStorage.getItem("savedposts"));
     let getcode = Math.random()*2;
     let uniquecode = "#fz"+getcode.toString()+"di.2";  
     if(profilename.value !="" )
