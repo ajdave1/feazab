@@ -1,0 +1,214 @@
+
+.chat-ai{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    display: none;
+    transition: 0.9s;
+
+ 
+
+}
+.user-input{
+height: 20%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(172, 169, 169);
+border-bottom-right-radius: var(--default-border);
+border-bottom-left-radius: var(--default-border);
+margin-top: 20px;
+
+
+}
+.user-input input{
+    width: 40%;
+    border: none;
+    border-top-left-radius: var(--default-border);
+    border-bottom-left-radius: var(--default-border);
+    padding: 5px 10px;
+    background-color:white;
+
+}
+
+
+.user-input  button{
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-top-right-radius: var(--default-border);
+    border-bottom-right-radius: var(--default-border);
+}
+.chat-card{
+    background-color:rgb(226, 226, 226);
+    width: 700px;
+    color: white;
+    border-top-right-radius: var(--default-border);
+    border-top-left-radius: var(--default-border);
+    margin: 0px 0px 30px 0px ;
+    height: 90%;
+   
+
+}
+.ai-image i{
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+  padding: 1px;
+}
+.ai-image{
+  font-weight: bold;
+  font-size: 40px;
+  align-items: center;
+ 
+}
+#ai-response{
+    padding: 5px 10px; 
+     background-color: var(--secondary-color);
+     margin: 30px 2px;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+     line-height: 1.5em;
+}
+
+.ai-response {
+    max-width:80%;
+    font-size: 14px;
+    border-radius:5px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    display: flex;
+    min-width: 50%;
+}
+.default-que{
+    background-color:rgb(77, 4, 77) !important; 
+    color: rgb(255, 245, 245);
+    font-weight: 600;
+    font-family: monospace;
+    padding: 5px 20px;
+}
+.date >p{  
+
+     width: 30%;
+}
+.date{
+    text-align: center;
+    color: rgb(34, 33, 33);
+    margin-bottom: 10px;
+    font-family: monospace;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#error{
+    padding: 0;
+    color: red;
+    padding: 4px;
+    display: none;
+    font-size: 1rem;
+    margin: 0;
+}
+.success-message{
+   display: none;
+    color: rgb(255, 239, 16);
+   margin: 0;
+   padding: 2px;
+   font-family:monospace;
+   transition: 0.3s;
+   line-height: 1.3em;
+}
+.success-message2{
+    display: block;
+    color: rgb(5, 255, 5) !important;
+    font-weight: bold;
+}
+.user-question{
+background-color: rgb(11, 71, 11);
+max-width:70%;
+font-size: 14px;
+line-height: 1.5em;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+padding: 5px 10px; 
+float: right;
+min-width: 50%;
+margin: 0;
+}
+#unique-id{
+    width: 50%;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+}
+.time{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.responses{
+    background-color: rgb(209, 209, 209);
+    height: 55%;
+    margin: 10px 10px auto;
+    overflow-y:auto;
+    overflow-x: hidden;
+  border-radius: 4px;
+padding: 20px;
+display: inline-block;
+
+}
+.responses::-webkit-scrollbar{
+    width: 10px;
+}
+.responses::-webkit-scrollbar-thumb{
+    background-color: rgba(116, 113, 113, 0.493);
+    width: 5px;
+}
+.responses::-webkit-scrollbar-thumb:active,.responses::-webkit-scrollbar-thumb:hover{
+
+    background-color: rgb(97, 94, 94);
+
+}
+.responses::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+
+.head{
+background-color: var(--secondary-color);
+border-radius: var(--default-border);
+margin: 0px 10px 5px 10px;
+text-align: center;
+padding :5px 0px;
+
+
+}
+.hide-chat{
+     display: flex;
+     justify-content: right; 
+    margin: 0;
+    }
+    .hide-chat > i{
+       color: white;
+       font-size: 2rem;
+      color: black;
+    cursor: pointer;
+    margin: 0;
+      
+    } 
+     .hide-chat > i:hover,.hide-chat > i:active{ 
+        color: red;
+    } 

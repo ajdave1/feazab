@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feaza blog</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style/mobile.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/ai.css">
+</head>
+
+<body>
+    <nav> 
+        <div class="logo" ><span class="bx bx-star"></span></div>
+        <ul id="menu">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">Blogs</a></li>
+            <li><a href="#">About us</a></li>    
+            <li><a href="#">Support </a></li>
+           <li><a id="upload-btn">Upload</a></li> 
+            <li class="close-menu"><i class="bx bx-x" id = "close-menu"></i></li>
+    
+        </ul> 
+        <div class="icons">
+           <div class="switch-mode"><i class="bx bx-moon"></i></div>
+           <div class="open-menu"><i class="bx bx-menu"></i></div>
+        </div>
+        <button class="bx bx-chat"> </button>
+    </nav>  
+<div class="section">
+    <div class="container">
+        <div class="header">
+            <h1>Feaza Blog</h1>
+            <p>searching for inspiring photos?</p>
+            <button>Explore</button>
+        </div>
+        <div class="sec-image"><img src="/assets/what.jpeg" alt=""></div>
+    </div>
+</div>
+<div id="blogs">
+    <h1>Blogs</h1>
+    <div class="card">
+        <div class="profile-info">
+            <div class="profile-pic"><img src="/assets/mypic.jpeg" id="profile-pic"></div>
+           <div class="profile-name">Ajagbe David</div>
+        </div>
+        <div class="card-image"><img src="/assets/what.jpg" id="blog-image"></div>
+        <div class="caption">
+            <p id="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis. Aliquam modi ad obcaecati, aliquid quo totam, aut et animi qui, amet accusantium. Iste, possimus eum. Ipsam ex deleniti amet, sapiente libero magnam fuga impedit labore dolorum eveniet a, velit, reiciendis magni exercitationem iste? Sit aperiam excepturi exercitationem qui mollitia.</p>
+      
+         <div class="interact">
+         <div id="like"><i class="bx bx-like"></i></div>
+         <div id="dislike"><i class="bx bx-dislike"></i></div>
+        </div> 
+        <div class="post-interactons">
+        <div class="like-count">Likes <span id="dislike-count"> 1M</span></div>
+        <div class="dislike-count">dislike<span id="dislike-count">1K</span></div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="upload">
+    <h2 class="bx bx-x upload-cancel"></h2>
+    <h1>Make a post </h1>
+   <div  class="profile"> 
+   <div class="image">
+    <h2>Profile information</h2>
+    <label for="profile-upload"><img src="/assets/profile.jpg" id="profile-picture"></label>
+    <input type="file" accept="image/jpeg image/jpg image/png" id="profile-upload" class="hide-item">
+   </div>
+    <div class="profile-name"><input type="text" placeholder="Enter your name" id="name"></div>
+    </div>
+<div class="post">
+    <h2> Post</h2>
+  <input type="file" accept="image/jpeg image/jpg image/png" id="image-blog" class="hide-item">
+  <label for= "image-blog"><img src="/assets/upload.png" id="blog-image-uploaded"></label>
+  <div class="blog-text">
+    <div class="uni"><p>Unique code</p>
+    <p class="unique-code-screen"></p></div>
+    <textarea placeholder="About your photo"></textarea>
+  </div>
+</div>
+
+  <div><button id="upload-button">Upload</button></div>
+  <div><span class="saved" id="save">Save</span></div>
+  <div class="error-screen"></div>
+
+</div>
+<div class="chat-ai"> 
+    <div class="chat-card"> 
+    <div class="header-chat">
+       <span class="hide-chat"><i class="bx bx-x " id="hide-chat"></i></span>
+       <h1 class="head"> ChatAi</h1>
+    </div>
+    <div class="responses">
+            <div class="date"><p id="date"></p></div>
+           
+            <div class="user-question default-que">
+               <i class="bx bx-i"></i>You're currently starting chat with our Chat Bot , Kindly contact our support if you need more assistance.
+            </div>
+             <div class="ai-response">
+                <div class="ai-image"><i class='bx bxs-user-circle'></i></div>
+                <div id="ai-response">
+                Hi there how can i help you
+                </div>
+            </div>
+        </div>
+         <div class="user-input">
+            <input type="text" autofocus placeholder="Type something here......." id="user-input" onkeydown="getkey(event.key)" maxlength="" minlength=""><button id="userInput-button">send</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="socials">
+        <span class="bx bx-instagram"></span>
+        <span class="bx bx-facebook"></span>
+        <span class="bx bx-twitter"></span>
+        <span class="bx bx-snapchat"></span>
+        </div>
+        <div class="copy">Copyright&copy;AJDAVE 2024 </div>
+</footer>
+<script src="script/new.js"></script>
+<script src="script/ai.js"></script>
+</body>
+</html>

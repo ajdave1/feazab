@@ -1,0 +1,368 @@
+body{
+    --primary-color: rgb(73, 6, 161);
+    --secondary-color:rgb(105, 4, 148);
+    --default-border:4px;
+    --color-white:white;
+    --color-black:black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: whitesmoke;
+    transition: 0.9s;
+    display: block;
+    padding: 20px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+   
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0px 20px;
+    color: inherit;
+    
+}
+nav ul li a{
+    font-size: 1.2rem; 
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav ul li a:hover, nav ul li a:active{
+    color: var(--primary-color);
+}
+.open-menu{
+    display: none;
+   
+}
+.container{
+   margin: 30px;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   align-items: center;
+   gap: 20px;
+}
+/* .sec-image {
+       min-width: 400px;
+} */
+.sec-image img{
+    width: 100%;
+    border-radius: var(--default-border);
+ 
+}
+.logo{
+    font-size: 3em;
+    text-shadow: 3px 0px 6px var(--secondary-color); 
+
+}
+.bx-chat{
+    position:fixed;
+   bottom: 50px;
+    right: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section{
+    margin: 50px 30px;
+    
+}
+.header{
+  margin:0;
+
+
+  
+
+    
+}
+.header h1{
+font-size: 3rem;
+margin: 0;
+}
+.header p{
+
+    font-family: monospace;
+    font-size: 18px;
+    font-style: italic;
+}
+.header > button{
+    background-color: var(--secondary-color);
+    padding:10px 40px;
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: var(--default-border);
+    margin: 20px 0px;
+ 
+    
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.switch-mode{
+   background-color: rgb(34, 33, 33);
+   color: white;
+   font-size: 2rem;
+   padding: 10px 16px;
+   border-radius: 50%;
+}
+#blogs{
+    margin: 20px 100px;
+ 
+}
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 7px;
+    padding:10px 5px;
+
+}
+.profile-pic{
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius:100%
+}
+.profile-pic img{
+width: 100%;
+height: 100%;
+ border-radius:100%
+}
+.profile-name{
+    font-weight: bold;
+    font-size: 18px;
+    text-transform:uppercase; 
+ 
+
+}
+.card{
+    /* background-color: rgba(236, 234, 234, 0.445); */
+    margin: 20px 50px;
+    border:5px solid;
+    border-radius: 10px;
+    margin-bottom: 120px;
+    padding: 20px 20px;
+  
+}
+.card-image{
+padding: 10px 40px;
+  
+}
+.card-image img{
+  width: 100%;
+  border-radius: var(--default-border);
+}
+
+.post-interactons{
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform:capitalize;
+}
+.like-count,.dislike-count{
+    padding: 3px 4px;
+}
+.caption{
+    padding: 0px 40px;
+}
+.caption > p{
+    margin-bottom: 20px;
+   
+}
+.darkmode{
+    background-color: black;
+    color: white;
+}
+.close-menu{
+    display: none;
+}
+#like:hover,#dislike:hover{
+font-size: 3.5rem;
+transition: 0.2s;
+cursor: pointer;
+}
+.interact{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3rem;
+    text-align: center;
+    padding-left: 10px;
+}
+.image h2{
+    border: 2px solid  ;
+    font-weight: 400;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 3px;
+    border-radius: var(--default-border);
+}
+.like-count > span,.dislike-count > span{
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.hide-item{
+    display: none;
+}
+.upload-darkmode{
+    background-color:rgb(27, 1, 27);
+}
+
+.upload{
+    position:fixed;
+    top: -2000px;
+    width: 400px;
+    background-color:inherit;
+    align-items: center;
+    padding: 20px 20px;
+    transition: 2s;
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 6px solid;
+    border-radius: 10px;
+    padding-bottom: 100px;
+}
+#profile-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    border: 5px solid ;
+    margin-top: 10px;
+}
+.upload::-webkit-scrollbar{
+    width:0px;
+}
+.upload::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.upload::-webkit-scrollbar-thumb{
+background-color:black;
+    border-radius: 2px;
+}
+.upload input[type="text"]{
+    background-color: rgb(39, 37, 37);
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.upload button{
+   background-color: var(--secondary-color);
+    border: none;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: var(--default-border);
+    float: right;
+    color: inherit;
+}
+.upload h1{
+
+    text-align: center;
+ 
+}
+.upload textarea{
+    width: 100%;
+    margin: 0% auto;
+    height: 100px;
+    resize: none;
+    border-radius: var(--default-border);
+}
+.profile{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.post h2{
+    text-align: center;
+    font-weight: 400;
+    font-family: monospace;
+    font-size: 20px;
+    border: 2px solid  ;
+    border-radius: var(--default-border);
+}
+.post img{
+    width: 100%;
+   margin-bottom: 10px;
+   border-radius: 10px;
+
+}
+.error-screen{
+  font-size: 13px;
+margin-top: 5px;
+color: red;
+
+  
+}
+.upload-cancel{
+    
+    font-size: 40px;
+   top: -30px;
+    right: 0;
+ padding: 0;
+    position:absolute;
+}
+.saved{
+    font-family: monospace;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 17px;
+}
+.saved:hover{
+    color: rgb(75, 2, 2);
+}
+footer{
+background-color: rgb(27, 1, 27);
+    height: 100px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    z-index: -1;
+    
+}
+.copy{
+    text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 5px ;
+  color: gray;
+}
+.unique-code-screen{
+font-weight: 900 !important;
+border: 2px solid purple;
+padding: 4px 10px;
+margin-bottom: 10px !important;
+margin-top: 2px !important;
+border-radius: var(--default-border);
+font-family: Arial, Helvetica, sans-serif !important;
+}
+.uni p{
+margin: 0;
+font-weight: 600;
+font-family: monospace;
+}
+
