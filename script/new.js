@@ -1,4 +1,3 @@
-
 window.alert("success");
 let switchModebtn= document.querySelector(".switch-mode");
 let body = document.body;
