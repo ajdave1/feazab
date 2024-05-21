@@ -31,7 +31,7 @@ uploadblog.onchange =()=>{
 }
 let likeb = document.querySelector("#like-button");
 let disbtn = document.querySelector("#dislike-button");
-let Posts = JSON.parse(localStorage.getItem("savedposts"));
+let Posts =[];
 let addPost = document.querySelector("#save");
 let profileimage =document.querySelector("#profile-picture");
 let profilename = document.querySelector("#name");
